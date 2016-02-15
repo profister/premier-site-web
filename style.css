@@ -1,5 +1,5 @@
 
-
+/* Téléchargement de la police*/
 @font-face {
     font-family: 'quicksandregular';
     src: url('fonts/quicksand-regular-webfont.eot');
@@ -14,20 +14,20 @@
 }
 
 
-body 
+body /* chargement de l'image de fond et application de la police à tous le document*/
 {
     background-image: url("bg.png");
     font-family: quicksandregular, Impact, "arial black",sans-sherif;
 }
 
-#bloc_page 
+#bloc_page /* definition de la taille de la page et mise en place d'un flex*/
 {
     width : 100%;
     margin : auto;
     display : flex;
 }
 
-#marge 
+#marge /* creation de la marge*/
 {
 
     border-radius: 10px 5px 10px 5px;
@@ -37,21 +37,21 @@ body
     height : 600px;
 }
 
-#corp_cv 
+#corp_cv /*  definition de le taille du titre et de la photo*/
 {
     flex : 9;
 }
 
 
 
-header 
+header /* mise en place du titre à coté de la photo*/
 {
     margin-left: 20px;
     margin-right: 20px;
     display : flex;   
 }
 
-#presentation
+#presentation /*texte centré et en gras */
 {
     text-align: center;
     font-weight: bold;
@@ -60,7 +60,7 @@ header
 
 
 
-section 
+section /* disposition des blocs*/
 {
     display: flex;
     flex-wrap = nowrap;
@@ -73,7 +73,7 @@ section
     padding: 10px;
 }
 
-h2 
+h2 /* mise en page des textes et en-tete paragraphe */
 {
     margin :10px;
     color: navy;
@@ -85,26 +85,26 @@ h2
     text-align: center;
 }
 
-a 
+a /* mise en forme des liens*/
 {
     font-weight: bold;
     color: navy;
     text-decoration: none;
 }
 
-a:hover 
+a:hover /* mise en forme des liens quand on passe la souris dessus*/
 {
     text-decoration: underline;
 }
 
-a:visited 
+a:visited /* mise en forme des liens apres àavoir clicker sur le lien*/
 {
     color: navy;
     text-decoration: none;
 }
 
 
-@media screen and (max-width: 1280px)
+@media screen and (max-width: 1280px) /* suppression de la marge et de la dispostion des blocs pour des résolutions < à 1280px */
 
 {
 
